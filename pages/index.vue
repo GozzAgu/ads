@@ -1,6 +1,6 @@
 <template>
   <div class="text-red-500">
-    Welcome
+    <HomeHero />
   </div>
 </template>
 

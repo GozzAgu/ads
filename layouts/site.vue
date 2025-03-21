@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900 transition-all">
-    <header class="border-b dark:border-b-gray-700 fixed top-0 left-0 w-full z-50 transition-all">
+    <header class="bg-white dark:bg-gray-900 border-b dark:border-b-gray-700 fixed top-0 left-0 w-full z-50 transition-all">
       <div class="container mx-auto flex justify-between items-center py-4 px-6">
         <div class="flex items-center">
           <NuxtLink to="/">
@@ -17,6 +17,9 @@
         </nav>
 
         <div class="flex items-center space-x-4">
+          <div>
+            <NuxtLink to="/about" class="cta-button">Learn More</NuxtLink>
+          </div>
           <button class="icon-btn">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
               viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
@@ -117,6 +120,10 @@ const isActive = (path) => route.path === path;
 </script>
 
 <style scoped>
+.cta-button {
+  @apply bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full text-lg font-semibold transition-all duration-300;
+}
+
 .h-16 {
   height: 4rem;
 }
