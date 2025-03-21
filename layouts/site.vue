@@ -13,6 +13,7 @@
           <NuxtLink to="/about" class="nav-link" :class="{ 'active': isActive('/about') }">About</NuxtLink>
           <NuxtLink to="/contact" class="nav-link" :class="{ 'active': isActive('/contact') }">Contact</NuxtLink>
           <NuxtLink to="/services" class="nav-link" :class="{ 'active': isActive('/services') }">Services</NuxtLink>
+          <NuxtLink to="/careers" class="nav-link" :class="{ 'active': isActive('/careers') }">Careers</NuxtLink>
         </nav>
 
         <div class="flex items-center space-x-4">
@@ -40,18 +41,64 @@
           <NuxtLink to="/about" class="mobile-link" :class="{ 'active': isActive('/about') }">About</NuxtLink>
           <NuxtLink to="/contact" class="mobile-link" :class="{ 'active': isActive('/contact') }">Contact</NuxtLink>
           <NuxtLink to="/services" class="mobile-link" :class="{ 'active': isActive('/services') }">Services</NuxtLink>
+          <NuxtLink to="/careers" class="nav-link" :class="{ 'active': isActive('/careers') }">Careers</NuxtLink>
         </div>
       </transition>
     </header>
 
     <div class="h-16 lg:h-20"></div>
 
-    <main class="flex-1 p-6">
+    <main class="flex-1 px-4 md:px-64 py-8">
       <slot />
     </main>
 
-    <footer class="bg-gray-900 border-t-2 dark:border-t-gray-700 text-white text-center p-4">
-      <p>&copy; 2025 VISIONE Website. All rights reserved.</p>
+    <footer class="bg-gray-900 text-white border-t-2 border-gray-700">
+      <div class="container mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="footer-heading">About Visione</h3>
+          <p class="text-gray-400 text-sm mt-2">
+            Visione is dedicated to innovative energy solutions, ensuring a sustainable future for all.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><NuxtLink to="/about" class="footer-link">About Us</NuxtLink></li>
+            <li><NuxtLink to="/services" class="footer-link">Our Services</NuxtLink></li>
+            <li><NuxtLink to="/contact" class="footer-link">Contact</NuxtLink></li>
+            <li><NuxtLink to="/careers" class="footer-link">Careers</NuxtLink></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Sustainability</h3>
+          <ul class="space-y-2">
+            <li><NuxtLink to="/climate" class="footer-link">Climate Initiatives</NuxtLink></li>
+            <li><NuxtLink to="/renewables" class="footer-link">Renewable Energy</NuxtLink></li>
+            <li><NuxtLink to="/safety" class="footer-link">Safety & Responsibility</NuxtLink></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Follow Us</h3>
+          <div class="flex space-x-4 mt-2">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-700 py-4 text-center text-sm text-gray-400">
+        <p>&copy; 2025 Visione. All rights reserved.</p>
+        <div class="flex justify-center space-x-6 mt-2">
+          <NuxtLink to="/privacy" class="footer-bottom-link">Privacy Policy</NuxtLink>
+          <NuxtLink to="/terms" class="footer-bottom-link">Terms of Use</NuxtLink>
+          <NuxtLink to="/cookies" class="footer-bottom-link">Cookies Policy</NuxtLink>
+        </div>
+      </div>
     </footer>
   </div>
 </template>
@@ -65,7 +112,6 @@ const toggleMenu = () => {
   menuOpen.value = !menuOpen.value;
 };
 
-// Get the current route
 const route = useRoute();
 const isActive = (path) => route.path === path;
 </script>
@@ -130,5 +176,21 @@ const isActive = (path) => route.path === path;
 }
 .slide-enter-from, .slide-leave-to {
   transform: translateY(-100%);
+}
+
+.footer-heading {
+  @apply text-lg font-semibold text-white border-b-2 border-red-600 pb-2;
+}
+
+.footer-link {
+  @apply text-gray-400 text-sm hover:text-red-500 transition-all;
+}
+
+.social-icon {
+  @apply text-gray-400 text-lg hover:text-yellow-500 transition-all;
+}
+
+.footer-bottom-link {
+  @apply text-gray-400 text-xs hover:text-red-500 transition-all;
 }
 </style>
