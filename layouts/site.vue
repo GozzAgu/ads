@@ -52,7 +52,7 @@
       <slot />
     </main>
 
-    <footer class="bg-gray-900 text-white border-t-2 border-gray-700">
+    <footer class="bg-gray-50 dark:bg-gray-900 text-white border-t dark:border-gray-700">
       <div class="container mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
           <h3 class="footer-heading">About Visione</h3>
@@ -91,7 +91,7 @@
         </div>
       </div>
 
-      <div class="border-t border-gray-700 py-4 text-center text-sm text-gray-400">
+      <div class="border-t dark:border-gray-700 py-4 text-center text-sm text-gray-400">
         <p>&copy; 2025 Visione. All rights reserved.</p>
         <div class="flex justify-center space-x-6 mt-2">
           <NuxtLink to="/privacy" class="footer-bottom-link">Privacy Policy</NuxtLink>
@@ -179,7 +179,7 @@ const isActive = (path) => route.path === path;
 }
 
 .footer-heading {
-  @apply text-lg font-semibold text-white border-b-2 border-red-600 pb-2 text-sm mb-2;
+  @apply text-lg font-semibold text-gray-500 dark:text-white border-b-2 border-red-600 pb-2 text-sm mb-2;
 }
 
 .footer-link {
