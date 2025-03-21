@@ -179,11 +179,11 @@ const isActive = (path) => route.path === path;
 }
 
 .footer-heading {
-  @apply text-lg font-semibold text-white border-b-2 border-red-600 pb-2;
+  @apply text-lg font-semibold text-white border-b-2 border-red-600 pb-2 text-sm mb-2;
 }
 
 .footer-link {
-  @apply text-gray-400 text-sm hover:text-red-500 transition-all;
+  @apply text-gray-400 text-xs hover:text-red-500 transition-all;
 }
 
 .social-icon {
