@@ -1,6 +1,9 @@
 <template>
   <div>
     <AboutMain />
+    <HomeCoreValues />
+    <HomeWhyChoose />
+    <HomeTeam />
   </div>
 </template>
 

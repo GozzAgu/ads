@@ -41,10 +41,6 @@ p {
   @apply text-xs md:text-sm text-gray-700 dark:text-gray-400 leading-relaxed;
 }
 
-.info-card:hover {
-  @apply scale-105 shadow-2xl;
-}
-
 .vision-card:hover {
   @apply border-green-400 dark:border-green-300;
 }

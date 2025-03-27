@@ -8,7 +8,7 @@
         Passionate professionals dedicated to excellence.
       </h4>
     </div>
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 max-w-6xl mx-auto mt-12">
+    <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-6 gap-8 p-6 max-w-7xl mx-auto mt-12">
       <div v-for="(member, index) in teamMembers" :key="index" class="team-card">
         <img :src="member.image" :alt="member.name" class="w-28 h-28 rounded-full">
         <h3 class="text-xs md:text-sm font-semibold mt-4 text-gray-600 dark:text-gray-100">{{ member.name }}</h3>

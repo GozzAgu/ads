@@ -13,7 +13,7 @@
           <NuxtLink to="/about" class="nav-link" :class="{ 'active': isActive('/about') }">About</NuxtLink>
           <NuxtLink to="/contact" class="nav-link" :class="{ 'active': isActive('/contact') }">Contact</NuxtLink>
           <NuxtLink to="/services" class="nav-link" :class="{ 'active': isActive('/services') }">Services</NuxtLink>
-          <NuxtLink to="/careers" class="nav-link" :class="{ 'active': isActive('/careers') }">Careers</NuxtLink>
+          <!-- <NuxtLink to="/careers" class="nav-link" :class="{ 'active': isActive('/careers') }">Careers</NuxtLink> -->
         </nav>
 
         <div class="flex items-center space-x-4">
@@ -44,7 +44,7 @@
           <NuxtLink to="/about" class="mobile-link" :class="{ 'active': isActive('/about') }">About</NuxtLink>
           <NuxtLink to="/contact" class="mobile-link" :class="{ 'active': isActive('/contact') }">Contact</NuxtLink>
           <NuxtLink to="/services" class="mobile-link" :class="{ 'active': isActive('/services') }">Services</NuxtLink>
-          <NuxtLink to="/careers" class="mobile-link" :class="{ 'active': isActive('/careers') }">Careers</NuxtLink>
+          <!-- <NuxtLink to="/careers" class="mobile-link" :class="{ 'active': isActive('/careers') }">Careers</NuxtLink> -->
         </div>
       </transition>
     </header>
@@ -56,10 +56,10 @@
     </main>
 
     <footer class="bg-gray-900 text-white border-t dark:border-gray-700">
-      <div class="container mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div class="container mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <h3 class="footer-heading">About Visione</h3>
-          <p class="text-gray-400 text-sm mt-2">
+          <p class="text-gray-300 text-sm mt-2">
             Visione is dedicated to innovative energy solutions, ensuring a sustainable future for all.
           </p>
         </div>
@@ -81,16 +81,6 @@
             <li><NuxtLink to="/renewables" class="footer-link">Renewable Energy</NuxtLink></li>
             <li><NuxtLink to="/safety" class="footer-link">Safety & Responsibility</NuxtLink></li>
           </ul>
-        </div>
-
-        <div>
-          <h3 class="footer-heading">Follow Us</h3>
-          <div class="flex space-x-4 mt-2">
-            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-          </div>
         </div>
       </div>
 
@@ -186,11 +176,11 @@ const isActive = (path) => route.path === path;
 }
 
 .footer-heading {
-  @apply text-lg font-semibold text-gray-500 dark:text-white border-b-2 border-red-600 pb-2 text-sm mb-2;
+  @apply text-lg font-semibold text-gray-300 dark:text-white border-b-2 border-red-600 pb-2 text-sm mb-2;
 }
 
 .footer-link {
-  @apply text-gray-400 text-xs hover:text-red-500 transition-all;
+  @apply text-gray-300 text-xs hover:text-red-500 transition-all;
 }
 
 .social-icon {

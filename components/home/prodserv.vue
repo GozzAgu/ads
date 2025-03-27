@@ -8,7 +8,8 @@ const isEnergyTab = computed(() => activeTab.value === 'energy');
 <template>
   <section class="bg-zinc-100 dark:bg-zinc-900 py-5 md:py-20 px-6">
     <div class="max-w-7xl mx-auto md:px-6">
-      <h2 class="text-xl md:text-4xl font-extrabold text-gray-800 dark:text-gray-200 mb-5 border-l-4 border-red-500 dark:border-red-600 pl-4">Products & Services</h2>
+      <h2 class="text-xl md:text-4xl font-extrabold text-gray-800 dark:text-gray-200 mb-5 border-l-4 border-red-500 dark:border-red-600 pl-4">Services</h2>
+      <h3 class=my-4>Visioni & Strauss offers an extensive range of services designed to meet diverse client needs with precision and excellence:</h3>
       <div class="flex border-b border-gray-300 dark:border-gray-700">
         <button 
           class="tab-button" 

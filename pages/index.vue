@@ -4,6 +4,7 @@
     <HomeProvisions />
     <HomeProdserv />
     <HomeMission />
+    <HomeCoreValues />
     <HomeWhyChoose />
     <HomeCallToAction />
     <HomeTeam />
