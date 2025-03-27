@@ -30,8 +30,6 @@ import { ref, onMounted, nextTick } from 'vue';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-gsap.registerPlugin(ScrollTrigger);
-
 const sectionRef = ref(null);
 const titleRef = ref(null);
 const cardWrapperRef = ref(null);
