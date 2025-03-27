@@ -1,6 +1,6 @@
 <template>
   <section class="relative w-full pb-32 bg-gray-100 dark:bg-black text-gray-800 dark:text-gray-200">
-    <div class="relative w-full h-72 flex items-center justify-center bg-gray-800 text-white">
+    <div class="relative w-full h-72 flex items-center justify-center bg-gray-900 text-white">
       <div class="text-center">
         <h1 class="text-4xl md:text-5xl font-bold">Our Services</h1>
         <p class="mt-2 text-lg text-gray-300">

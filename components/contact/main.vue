@@ -1,13 +1,13 @@
 <template>
-  <section class="bg-gray-100 dark:bg-gray-900 min-h-screen">
-    <div class="relative w-full h-72 flex items-center justify-center bg-gray-800 text-white">
+  <section class="bg-gray-100 dark:bg-black min-h-screen">
+    <div class="relative w-full h-72 flex items-center justify-center bg-gray-900 text-white">
       <div class="text-center">
         <h1 class="text-4xl md:text-5xl font-bold">Contact Us</h1>
         <p class="mt-2 text-lg text-gray-300">Reach out to us.</p>
       </div>
     </div>
 
-    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 md:p-8 max-w-2xl mx-auto my-12">
+    <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-6 md:p-8 max-w-2xl mx-auto my-12">
       <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">Get in Touch</h3>
       <p class="text-sm text-gray-600 dark:text-gray-300 mb-6">
         Feel free to contact us for inquiries, collaborations, or general questions.
@@ -33,7 +33,7 @@
 
     <div class="max-w-6xl mx-auto py-16 px-6">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+        <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md">
           <h4 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Our Address</h4>
           <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">88 Evo Road, GRA, Port Harcourt, Rivers State, Nigeria</p>
           <h4 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mt-4">Email</h4>
