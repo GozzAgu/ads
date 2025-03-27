@@ -1,6 +1,6 @@
 <template>
-  <div class="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900 transition-all">
-    <header class="bg-white dark:bg-gray-900 border-b dark:border-b-gray-700 fixed top-0 left-0 w-full z-50 transition-all">
+  <div class="min-h-screen flex flex-col bg-gray-50 dark:bg-black transition-all">
+    <header class="bg-white dark:bg-black border-b dark:border-b-gray-900 fixed top-0 left-0 w-full z-50 transition-all">
       <div class="container mx-auto flex justify-between items-center py-4 px-6">
         <div class="flex items-center">
           <NuxtLink to="/">
@@ -51,11 +51,11 @@
 
     <div class="h-16 lg:h-20"></div>
 
-    <main class="flex-1 px-4 md:px-64 py-8">
+    <main class="flex-1">
       <slot />
     </main>
 
-    <footer class="bg-gray-50 dark:bg-gray-900 text-white border-t dark:border-gray-700">
+    <footer class="bg-gray-900 text-white border-t dark:border-gray-700">
       <div class="container mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
           <h3 class="footer-heading">About Visione</h3>
@@ -121,7 +121,7 @@ const isActive = (path) => route.path === path;
 
 <style scoped>
 .cta-button {
-  @apply bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full text-lg font-semibold transition-all duration-300;
+  @apply bg-red-900 rounded-md hover:bg-red-700 text-white px-6 py-3 text-lg font-semibold transition-all duration-300;
 }
 
 .h-16 {
@@ -132,12 +132,12 @@ const isActive = (path) => route.path === path;
 }
 
 .nav-link {
-  @apply text-gray-700 dark:text-gray-300 hover:text-red-600 transition-all duration-200 font-semibold text-sm relative;
+  @apply text-gray-700 dark:text-gray-300 hover:text-red-900 transition-all duration-200 font-semibold text-sm relative;
   padding-bottom: 5px;
 }
 
 .nav-link.active {
-  @apply text-red-600;
+  @apply text-red-900;
 }
 
 .nav-link.active::after {
@@ -147,8 +147,8 @@ const isActive = (path) => route.path === path;
   bottom: -3px;
   width: 100%;
   height: 1.5px;
-  background-color: red;
   transition: width 0.3s ease-in-out;
+  @apply bg-red-900;
 }
 
 .dropdown-menu {

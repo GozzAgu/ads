@@ -1,6 +1,12 @@
 <template>
-  <div class="text-red-500">
+  <div>
     <HomeHero />
+    <HomeProvisions />
+    <HomeProdserv />
+    <HomeMission />
+    <HomeWhyChoose />
+    <HomeCallToAction />
+    <HomeTeam />
   </div>
 </template>
 
