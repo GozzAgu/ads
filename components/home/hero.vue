@@ -6,7 +6,6 @@
         :slides-per-view="1"
         :loop="true"
         :autoplay="{ delay: 5000, disableOnInteraction: false }"
-        navigation
         class="w-full h-full"
       >
         <SwiperSlide v-for="(image, index) in images" :key="index" class="relative">
