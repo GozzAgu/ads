@@ -11,8 +11,8 @@
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 max-w-6xl mx-auto mt-12">
       <div v-for="(member, index) in teamMembers" :key="index" class="team-card">
         <img :src="member.image" :alt="member.name" class="w-28 h-28 rounded-full">
-        <h3 class="text-sm md:text-base font-semibold mt-4 text-gray-600 dark:text-gray-100">{{ member.name }}</h3>
-        <p class="text-xs md:text-sm text-gray-400 dark:text-gray-300">{{ member.role }}</p>
+        <h3 class="text-xs md:text-sm font-semibold mt-4 text-gray-600 dark:text-gray-100">{{ member.name }}</h3>
+        <p class="text-xs text-gray-400 dark:text-gray-300">{{ member.role }}</p>
         <div class="flex space-x-4 mt-4">
           <a v-if="member.linkedin" :href="member.linkedin" target="_blank" class="icon">
             <Icon name="mdi:linkedin" class="text-blue-400 dark:text-blue-300 text-2xl" />

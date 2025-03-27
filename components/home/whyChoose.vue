@@ -8,7 +8,7 @@
         <div class="choose-us-card">
           <Icon name="material-symbols:lightbulb-circle-rounded" class="text-green-500 text-4xl" />
           <h3 class="text-green-500 dark:text-green-100 text-lg md:text-2xl font-bold mt-4">Innovative Solutions</h3>
-          <p class="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
+          <p class="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed text-xs md:text-sm">
             We leverage the latest technology to craft creative and innovative solutions, ensuring our 
             products meet the evolving needs of our clients while pushing boundaries.
           </p>
@@ -17,7 +17,7 @@
         <div class="choose-us-card">
           <Icon name="material-symbols:person-raised-hand" class="text-blue-500 text-4xl" />
           <h3 class="text-blue-500 dark:text-blue-100 text-lg md:text-2xl font-bold mt-4">Expert Team</h3>
-          <p class="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
+          <p class="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed text-xs md:text-sm">
             Our diverse team of experts brings years of experience across various industries, ensuring 
             that we can solve complex problems efficiently and deliver the highest quality outcomes.
           </p>
@@ -26,7 +26,7 @@
         <div class="choose-us-card">
           <Icon name="material-symbols:person-play-rounded" class="text-red-500 text-4xl" />
           <h3 class="text-red-500 dark:text-red-50 text-lg md:text-2xl font-bold mt-4">Client-Centric Approach</h3>
-          <p class="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
+          <p class="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed text-xs md:text-sm">
             We put our clients first, ensuring that every project is tailored to meet their specific needs. 
             Our commitment to exceptional customer service is at the heart of our success.
           </p>
