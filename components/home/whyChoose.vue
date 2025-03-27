@@ -6,9 +6,7 @@
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
         <div class="choose-us-card">
-          <div class="icon">
-            <Icon name="material-symbols:lightbulb-circle-rounded" class="text-green-500 text-4xl" />
-          </div>
+          <Icon name="material-symbols:lightbulb-circle-rounded" class="text-green-500 text-4xl" />
           <h3 class="text-green-500 dark:text-green-100 text-lg md:text-2xl font-bold mt-4">Innovative Solutions</h3>
           <p class="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
             We leverage the latest technology to craft creative and innovative solutions, ensuring our 
@@ -17,9 +15,7 @@
         </div>
         
         <div class="choose-us-card">
-          <div class="icon">
-            <Icon name="material-symbols:person-raised-hand" class="text-blue-500 text-4xl" />
-          </div>
+          <Icon name="material-symbols:person-raised-hand" class="text-blue-500 text-4xl" />
           <h3 class="text-blue-500 dark:text-blue-100 text-lg md:text-2xl font-bold mt-4">Expert Team</h3>
           <p class="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
             Our diverse team of experts brings years of experience across various industries, ensuring 
@@ -28,10 +24,8 @@
         </div>
         
         <div class="choose-us-card">
-          <div class="icon">
-            <Icon name="material-symbols:person-play-rounded" class="text-yellow-500 text-4xl" />
-          </div>
-          <h3 class="text-yellow-500 dark:text-yellow-50 text-lg md:text-2xl font-bold mt-4">Client-Centric Approach</h3>
+          <Icon name="material-symbols:person-play-rounded" class="text-red-500 text-4xl" />
+          <h3 class="text-red-500 dark:text-red-50 text-lg md:text-2xl font-bold mt-4">Client-Centric Approach</h3>
           <p class="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
             We put our clients first, ensuring that every project is tailored to meet their specific needs. 
             Our commitment to exceptional customer service is at the heart of our success.
@@ -56,14 +50,9 @@
 }
 
 .choose-us-card:nth-child(3) {
-  @apply bg-yellow-50 dark:bg-yellow-900;
+  @apply bg-red-50 dark:bg-red-900;
 }
 
-.choose-us-card .icon {
-  @apply rounded-full p-4 text-center bg-green-100;
-  width: 60px;
-  height: 60px;
-}
 .choose-us-card h3 {
   @apply font-semibold;
 }
@@ -78,7 +67,7 @@
   @apply bg-blue-100;
 }
 .choose-us-card:nth-child(3) .icon {
-  @apply bg-yellow-100;
+  @apply bg-red-100;
 }
 
 @media (min-width: 768px) {

@@ -109,7 +109,7 @@ const isEnergyTab = computed(() => activeTab.value === 'energy');
   @apply text-xs md:text-base text-gray-600 dark:text-gray-300 mt-2 text-sm leading-relaxed;
 }
 .card-link {
-  @apply text-xs md:text-base text-blue-600 dark:text-blue-400 font-semibold mt-4 inline-flex items-center gap-2 transition-all;
+  @apply text-xs md:text-base text-red-800 font-semibold mt-4 inline-flex items-center gap-2 transition-all;
 }
 .card-link::after {
   content: " →";

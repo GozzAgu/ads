@@ -4,9 +4,6 @@
       <h2 class="text-xl md:text-4xl font-extrabold text-gray-700 dark:text-gray-200 mb-5 border-l-4 border-red-500 dark:border-red-600 pl-4">
         Our Vision & Mission
       </h2>
-      <h4 class="text-lg text-gray-300 dark:text-gray-200 mb-4 tracking-wide">
-        Leading the energy transition while prioritizing sustainability and innovation.
-      </h4>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
         <div class="info-card vision-card">
           <h3>Our Vision</h3>
@@ -33,15 +30,15 @@
 }
 
 h3 {
-  @apply text-2xl font-bold mb-4 uppercase tracking-wide text-gray-700 dark:text-gray-400;
+  @apply text-lg md:text-2xl font-bold mb-4 uppercase tracking-wide text-gray-700 dark:text-gray-400;
 }
 
 h4 {
-  @apply text-lg mb-4 text-gray-700 dark:text-gray-400 tracking-wide;
+  @apply text-base md:text-xl mb-4 text-gray-700 dark:text-gray-400 tracking-wide;
 }
 
 p {
-  @apply text-lg text-gray-700 dark:text-gray-400 leading-relaxed;
+  @apply text-xs md:text-sm text-gray-700 dark:text-gray-400 leading-relaxed;
 }
 
 .info-card:hover {

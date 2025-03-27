@@ -17,7 +17,7 @@
         </nav>
 
         <div class="flex items-center space-x-4">
-          <div>
+          <div class="hidden lg:block">
             <NuxtLink to="/about" class="cta-button">Learn More</NuxtLink>
           </div>
           <button class="icon-btn">
@@ -44,7 +44,7 @@
           <NuxtLink to="/about" class="mobile-link" :class="{ 'active': isActive('/about') }">About</NuxtLink>
           <NuxtLink to="/contact" class="mobile-link" :class="{ 'active': isActive('/contact') }">Contact</NuxtLink>
           <NuxtLink to="/services" class="mobile-link" :class="{ 'active': isActive('/services') }">Services</NuxtLink>
-          <NuxtLink to="/careers" class="nav-link" :class="{ 'active': isActive('/careers') }">Careers</NuxtLink>
+          <NuxtLink to="/careers" class="mobile-link" :class="{ 'active': isActive('/careers') }">Careers</NuxtLink>
         </div>
       </transition>
     </header>
