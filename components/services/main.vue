@@ -1,6 +1,5 @@
 <template>
   <section class="relative w-full pb-32 bg-gray-100 dark:bg-black text-gray-800 dark:text-gray-200">
-    <!-- Hero Section -->
     <div class="relative w-full h-72 flex items-center justify-center bg-gray-800 text-white">
       <div class="text-center">
         <h1 class="text-4xl md:text-5xl font-bold">Our Services</h1>
@@ -10,7 +9,6 @@
       </div>
     </div>
 
-    <!-- Service Grid -->
     <div class="max-w-7xl mx-auto mt-12 px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
       <div v-for="(service, index) in services" :key="index" class="service-card">
         <div class="relative w-full h-48 overflow-hidden rounded-lg">

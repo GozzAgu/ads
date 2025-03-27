@@ -1,15 +1,62 @@
 <script setup>
+import { ref, computed } from 'vue';
+
 const activeTab = ref('power');
 
 const isPowerTab = computed(() => activeTab.value === 'power');
 const isEnergyTab = computed(() => activeTab.value === 'energy');
+
+const services = [
+  { 
+    title: "Gas Products & Chemical Supply", 
+    icon: "mdi:gas-cylinder", 
+    description: "Reliable, quality-assured gas and chemical supply for energy and industrial applications.", 
+    image: "https://images.unsplash.com/photo-1510467181625-c419e443bdfa?q=80&w=3538&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+  },
+  { 
+    title: "Road Construction & Infrastructure", 
+    icon: "mdi:road-variant", 
+    description: "Building durable roads, bridges, culverts, and drainage systems for sustainable transport networks.", 
+    image: "https://images.unsplash.com/photo-1503708928676-1cb796a0891e?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+  },
+  { 
+    title: "Solar Power & Renewable Energy", 
+    icon: "mdi:solar-power", 
+    description: "Cutting-edge solar energy solutions for cost-effective and sustainable power generation.", 
+    image: "https://images.unsplash.com/photo-1558449028-b53a39d100fc?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+  },
+  { 
+    title: "Renovation & Building Works", 
+    icon: "mdi:hammer-wrench", 
+    description: "Modernizing structures with a focus on functionality, safety, and aesthetic excellence.", 
+    image: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+  },
+  { 
+    title: "Water & Sewage Engineering", 
+    icon: "mdi:water-pump", 
+    description: "Advanced water management and sewage treatment solutions for safe and sustainable water use.", 
+    image: "https://images.unsplash.com/photo-1582669300365-630322b86cf9?q=80&w=3542&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+  },
+  { 
+    title: "Civil Engineering & Estate Planning", 
+    icon: "mdi:home-modern", 
+    description: "Comprehensive civil engineering services for estate planning and development.", 
+    image: "https://images.unsplash.com/photo-1625722662233-297060231b85?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+  },
+  { 
+    title: "General Supplies", 
+    icon: "mdi:package-variant-closed", 
+    description: "Providing essential supplies to support seamless project execution.", 
+    image: "https://images.unsplash.com/photo-1627309366653-2dedc084cdf1?q=80&w=3466&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+  }
+];
 </script>
 
 <template>
   <section class="bg-zinc-100 dark:bg-zinc-900 py-5 md:py-20 px-6">
     <div class="max-w-7xl mx-auto md:px-6">
       <h2 class="text-xl md:text-4xl font-extrabold text-gray-800 dark:text-gray-200 mb-5 border-l-4 border-red-500 dark:border-red-600 pl-4">Services</h2>
-      <h3 class=my-4>Visioni & Strauss offers an extensive range of services designed to meet diverse client needs with precision and excellence:</h3>
+      <h3 class="my-4">Visioni & Strauss offers an extensive range of services designed to meet diverse client needs with precision and excellence:</h3>
       <div class="flex border-b border-gray-300 dark:border-gray-700">
         <button 
           class="tab-button" 
@@ -28,55 +75,27 @@ const isEnergyTab = computed(() => activeTab.value === 'energy');
       </div>
 
       <div class="mt-12 grid md:grid-cols-3 gap-6">
-        <div v-if="isPowerTab" class="card">
-          <img src="https://images.unsplash.com/photo-1605647257485-28019bfed0e8?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="EV Charging" class="card-img">
+        <div v-if="isPowerTab" v-for="(service, index) in services.slice(0, 3)" :key="index" class="card">
+          <img :src="service.image" alt="service.title" class="card-img">
           <div class="p-4 md:p-6">
-            <h3 class="card-title flex items-center gap-2">
-              Smart Charging Stations
+            <h3 class="card-title flex items-center">
+              <span :class="service.icon"></span>
+              {{ service.title }}
             </h3>
-            <p class="card-text">Discover our fast-charging network for electric vehicles.</p>
-            <a href="#" class="card-link">Learn about Visionee Charge</a>
-          </div>
-        </div>
-        <div v-if="isPowerTab" class="card">
-          <img src="https://images.unsplash.com/photo-1582377224944-2c2a17affa38?q=80&w=3542&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Energy Solutions" class="card-img">
-          <div class="p-4 md:p-6">
-            <h3 class="card-title flex items-center gap-2">
-              Sustainable Fuels
-            </h3>
-            <p class="card-text">Explore our range of clean and efficient energy sources.</p>
-            <a href="#" class="card-link">See our Fuel Innovations</a>
-          </div>
-        </div>
-        <div v-if="isPowerTab" class="card">
-          <img src="https://images.unsplash.com/photo-1520433259178-0a6b180165fa?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Battery Solutions" class="card-img">
-          <div class="p-4 md:p-6">
-            <h3 class="card-title flex items-center gap-2">
-              Battery Tech for the Future
-            </h3>
-            <p class="card-text">Find the best energy storage solutions for your needs.</p>
-            <a href="#" class="card-link">Discover our Battery Tech</a>
+            <p class="card-text">{{ service.description }}</p>
+            <a href="#" class="card-link">Learn more</a>
           </div>
         </div>
 
-        <div v-if="isEnergyTab" class="card">
-          <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=3516&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Solar Energy" class="card-img">
+        <div v-if="isEnergyTab" v-for="(service, index) in services.slice(3, 6)" :key="index" class="card">
+          <img :src="service.image" alt="service.title" class="card-img">
           <div class="p-4 md:p-6">
             <h3 class="card-title flex items-center gap-2">
-              Solar Power Solutions
+              <span :class="service.icon"></span>
+              {{ service.title }}
             </h3>
-            <p class="card-text">Harness the sun’s energy with our solar tech.</p>
-            <a href="#" class="card-link">Explore Solar Innovations</a>
-          </div>
-        </div>
-        <div v-if="isEnergyTab" class="card">
-          <img src="https://images.unsplash.com/photo-1548337138-e87d889cc369?q=80&w=3592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Wind Energy" class="card-img">
-          <div class="p-4 md:p-6">
-            <h3 class="card-title flex items-center gap-2">
-              Wind Energy Advancements
-            </h3>
-            <p class="card-text">Discover how we harness wind for sustainable energy.</p>
-            <a href="#" class="card-link">See Our Wind Solutions</a>
+            <p class="card-text">{{ service.description }}</p>
+            <a href="#" class="card-link">Learn more</a>
           </div>
         </div>
       </div>
@@ -104,10 +123,10 @@ const isEnergyTab = computed(() => activeTab.value === 'energy');
   @apply w-full h-56 object-cover;
 }
 .card-title {
-  @apply text-lg md:text-xl font-semibold text-gray-900 dark:text-gray-100 flex items-center gap-2;
+  @apply text-sm md:text-lg font-semibold text-gray-900 dark:text-gray-100 flex items-center;
 }
 .card-text {
-  @apply text-xs md:text-base text-gray-600 dark:text-gray-300 mt-2 text-sm leading-relaxed;
+  @apply text-xs md:text-sm text-gray-600 dark:text-gray-300 mt-2;
 }
 .card-link {
   @apply text-xs md:text-base text-red-800 font-semibold mt-4 inline-flex items-center gap-2 transition-all;
