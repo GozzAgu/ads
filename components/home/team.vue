@@ -10,12 +10,6 @@
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-8 p-6 max-w-7xl mx-auto mt-12">
       <div v-for="(member, index) in teamMembers" :key="index" class="team-card">
-        <div v-if="member.image" class="w-28 h-28 rounded-full overflow-hidden">
-          <img :src="member.image" :alt="member.name" class="w-full h-full object-cover">
-        </div>
-        <div v-else class="w-28 h-28 rounded-full flex items-center justify-center bg-gray-500 text-white text-xl font-bold">
-          {{ getInitials(member.name) }}
-        </div>
         <h3 class="text-xs md:text-sm font-semibold mt-4 text-gray-600 dark:text-gray-100">{{ member.name }}</h3>
         <p class="text-xs text-gray-400 dark:text-gray-300">{{ member.role }}</p>
         <div class="flex space-x-4 mt-4">
@@ -59,18 +53,11 @@ const teamMembers = [
     image: "",
   }
 ];
-
-// Helper function to get initials
-const getInitials = (name) => {
-  const nameParts = name.split(' ');
-  const initials = nameParts.map(part => part.charAt(0).toUpperCase()).join('');
-  return initials;
-};
 </script>
 
 <style scoped>
 .team-card {
-  @apply flex flex-col p-6 rounded-lg transition-transform duration-300;
+  @apply flex flex-col p-6 rounded-lg transition-transform duration-300 bg-gray-100 dark:bg-red-900;
   backdrop-filter: blur(10px);
 }
 
