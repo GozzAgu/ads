@@ -59,7 +59,7 @@
     <footer class="bg-gray-900 text-white border-t dark:border-gray-700">
       <div class="container mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
-          <h3 class="footer-heading">About Visione</h3>
+          <h3 class="footer-heading">About Visioni & Strauss</h3>
           <p class="text-gray-300 text-sm mt-2">
             Visione is dedicated to innovative energy solutions, ensuring a sustainable future for all.
           </p>
