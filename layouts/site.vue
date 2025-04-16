@@ -4,8 +4,8 @@
       <div class="container mx-auto flex justify-between items-center py-4 px-6">
         <div class="flex items-center">
           <NuxtLink class="flex items-center gap-x-2" to="/">
-            <img src="/Visioni Icon (No Background).png" alt="VISIONE" class="h-10">
-            <p class="text-sm md:text-base font-black text-yellow-500">VIS<span class="text-red-700">IONI</span></p>
+            <img src="/Visioni Icon (No Background).png" alt="VISIONE" class="h-16" />
+            <!-- <p class="text-sm md:text-base font-black text-yellow-500">VIS<span class="text-red-700">IONI</span></p> -->
           </NuxtLink>
         </div>
 
