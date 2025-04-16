@@ -9,15 +9,17 @@
         <div ref="visionCardRef" class="info-card vision-card opacity-0">
           <h3>Our Vision</h3>
           <p>
-            We aspire to be the most preferred integrated solution partner by continuously building 
-            on our experience and embracing innovation to drive sustainable progress.
+            We aspire to be the most preferred integrated solution partner across our industries by 
+            continuously building on our experience and embracing innovation. Our goal is to empower 
+            communities, drive sustainable progress, and redefine industry standards both locally and on the global stage.
           </p>
         </div>
         <div ref="missionCardRef" class="info-card mission-card opacity-0">
           <h3>Our Mission</h3>
           <p>
-            To leverage expertise and cutting-edge technology to deliver innovative, 
-            sustainable, and high-quality solutions, ensuring every project sets a new standard.
+            To leverage the collective expertise of our team and cutting-edge technology to deliver innovative, 
+            sustainable, and high-quality solutions. We are dedicated to enhancing our clients’ 
+            success through value-added services and ensuring every project sets a new benchmark for excellence.
           </p>
         </div>
       </div>
