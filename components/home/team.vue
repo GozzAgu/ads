@@ -45,7 +45,7 @@
 
           <button
             @click="toggleExpanded(index)"
-            class="mt-2 text-xs text-red-700 hover:underline focus:outline-none"
+            class="mt-2 text-xs text-red-400 hover:underline focus:outline-none"
           >
             {{ activeIndex === index ? 'Show Less' : 'Read More' }}
           </button>
