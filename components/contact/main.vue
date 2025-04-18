@@ -35,15 +35,22 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md">
           <h4 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Our Address</h4>
-          <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">88 Evo Road, GRA, Port Harcourt, Rivers State, Nigeria</p>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">No 10, Durban street off Adetokunbo Ademola crescent, Wuse II, Abuja, Nigeria.</p>
           <h4 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mt-4">Email</h4>
           <p class="text-sm text-gray-600 dark:text-gray-300">info@visionistrauss.com</p>
           <h4 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mt-4">Phone</h4>
-          <p class="text-sm text-gray-600 dark:text-gray-300">+234 812 345 6789</p>
+          <p class="text-sm text-gray-600 dark:text-gray-300">+234 703 300 9900 | +234 808 010 0084</p>
         </div>
         <div class="rounded-lg overflow-hidden shadow-lg">
-          <iframe class="w-full h-96" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31839.68591437165!2d7.0103419!3d4.8068424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cd9ad68d8c6d%3A0xf74c3b8a6b6d9e4b!2s88%20Evo%20Rd%2C%20GRA%2C%20Port%20Harcourt%2C%20Rivers!5e0!3m2!1sen!2sng!4v1642024158442!5m2!1sen!2sng">
+          <iframe
+            class="w-full h-96"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            loading="lazy"
+            allowfullscreen
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.5964422307023!2d7.48896201428546!3d9.082427693491135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0a5a05555555%3A0xdec0f92d1a6df28e!2s10%20Durban%20St%2C%20Wuse%2C%20Abuja!5e0!3m2!1sen!2sng!4v1713280032013!5m2!1sen!2sng">
           </iframe>
         </div>
       </div>
