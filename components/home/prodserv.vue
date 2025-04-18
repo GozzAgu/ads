@@ -83,7 +83,7 @@ const services = [
               {{ service.title }}
             </h3>
             <p class="card-text">{{ service.description }}</p>
-            <a href="#" class="card-link">Learn more</a>
+            <NuxtLink :to="`/services?highlight=${index}`" class="card-link">Learn more</NuxtLink>
           </div>
         </div>
 
@@ -95,7 +95,7 @@ const services = [
               {{ service.title }}
             </h3>
             <p class="card-text">{{ service.description }}</p>
-            <a href="#" class="card-link">Learn more</a>
+            <NuxtLink :to="`/services?highlight=${index}`" class="card-link">Learn more</NuxtLink>
           </div>
         </div>
       </div>

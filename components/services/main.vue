@@ -10,7 +10,12 @@
     </div>
 
     <div class="max-w-7xl mx-auto mt-12 px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
-      <div v-for="(service, index) in services" :key="index" class="service-card">
+      <div
+        v-for="(service, index) in services"
+        :key="index"
+        class="service-card"
+        :class="{ 'highlighted-service': highlightIndex === index }"
+      >
         <div class="relative w-full h-48 overflow-hidden rounded-lg">
           <img :src="service.image" :alt="service.title" class="w-full h-full object-cover">
         </div>
@@ -27,6 +32,21 @@
 </template>
 
 <script setup>
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+const highlightIndex = ref(null)
+
+onMounted(() => {
+  const highlightParam = route.query.highlight
+  if (highlightParam !== undefined) {
+    highlightIndex.value = parseInt(highlightParam)
+    setTimeout(() => {
+      highlightIndex.value = null
+    }, 2000)
+  }
+})
+
 const services = [
   { 
     title: "Gas Products & Chemical Supply", 
@@ -84,5 +104,9 @@ const services = [
 
 .service-card img {
   @apply w-full h-48 object-cover rounded-lg;
+}
+
+.highlighted-service {
+  @apply ring-4 ring-red-700 scale-105 transition-all duration-300;
 }
 </style>
