@@ -80,13 +80,13 @@
             <div>
               <h4 class="text-sm font-bold text-gray-900 dark:text-gray-100">📍 Reach us on:</h4>
               <p class="text-xs text-gray-600 dark:text-gray-300 mt-1">
-                info@visionistrauss.com | +234 812 345 6789
+                info@visionistrauss.com | +234 703 300 9900 | +234 808 010 0084
               </p>
             </div>
             <div>
               <h4 class="text-sm font-bold text-gray-900 dark:text-gray-100">📍 Find us here:</h4>
               <p class="text-xs text-gray-600 dark:text-gray-300 mt-1">
-                88 Evo Road, GRA, Port Harcourt, Rivers State, Nigeria
+                No 10, Durban street off Adetokunbo Ademola crescent, Wuse II, Abuja, Nigeria.
               </p>
             </div>
           </div>
