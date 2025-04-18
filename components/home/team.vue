@@ -5,7 +5,24 @@
         Meet Our Team
       </h2>
       <h4 class="text-xs md:text-lg text-gray-600 dark:text-gray-200 mb-4 tracking-wide">
-        Passionate professionals dedicated to excellence.
+        Board of Directors
+      </h4>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-8 p-6 max-w-7xl mx-auto mt-12">
+      <div v-for="(member, index) in teamMembers" :key="index" class="team-card">
+        <h3 class="text-xs md:text-sm font-semibold mt-4 text-gray-600 dark:text-gray-100">{{ member.name }}</h3>
+        <p class="text-xs text-gray-400 dark:text-gray-300">{{ member.role }}</p>
+        <div class="flex space-x-4 mt-4">
+          <a v-if="member.linkedin" :href="member.linkedin" target="_blank" class="icon">
+            <Icon name="mdi:linkedin" class="text-blue-400 dark:text-blue-300 text-2xl" />
+          </a>
+          <a v-if="member.twitter" :href="member.twitter" target="_blank" class="icon">
+            <Icon name="mdi:twitter" class="text-blue-300 dark:text-blue-400 text-2xl" />
+          </a>
+        </div>
+      </div>
+      <h4 class="text-xs md:text-lg text-gray-600 dark:text-gray-200 tracking-wide">
+        Board of Directors
       </h4>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-8 p-6 max-w-7xl mx-auto mt-12">
@@ -28,23 +45,23 @@
 <script setup>
 const teamMembers = [
   {
-    name: "Arch. Ositadinma Christopher",
-    role: "CEO & Founder",
+    name: "Mr. Obinna M. Ibe",
+    role: "Executive Director",
     image: "",
   },
   {
-    name: "Engr. Okey Mike Nwubani",
-    role: "CTO",
+    name: "Anita Ejiogu",
+    role: "Executive Director",
     image: "",
   },
   {
-    name: "Engr. Olalekan Akinwale Famakinwa",
-    role: "Lead Developer",
+    name: "Alhaji Shehu Sambo",
+    role: "Executive Director",
     image: "",
   },
   {
-    name: "Engr. Opadere Ezekiel Segun",
-    role: "CEO & Founder",
+    name: "Chief D. M. Ejogu",
+    role: "Chief Executive Director",
     image: "",
   },
   {

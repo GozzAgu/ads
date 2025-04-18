@@ -70,7 +70,7 @@ const services = [
           :class="{ active: isEnergyTab }" 
           @click="activeTab = 'energy'"
         >
-          🌱 Smart Energy Stops
+          🌱 Smart Energy
         </button>
       </div>
 

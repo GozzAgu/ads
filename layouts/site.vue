@@ -61,7 +61,7 @@
         <div>
           <h3 class="footer-heading">About Visioni & Strauss</h3>
           <p class="text-gray-300 text-sm mt-2">
-            Visione is dedicated to innovative energy solutions, ensuring a sustainable future for all.
+            Visioni & Strauss is dedicated to innovative energy solutions, ensuring a sustainable future for all.
           </p>
         </div>
 
@@ -86,7 +86,7 @@
       </div>
 
       <div class="border-t dark:border-gray-700 py-4 text-center text-sm text-gray-400">
-        <p>&copy; 2025 Visione. All rights reserved.</p>
+        <p>&copy; 2025 Visioni & Strauss. All rights reserved.</p>
         <div class="flex justify-center space-x-6 mt-2">
           <NuxtLink to="/privacy" class="footer-bottom-link">Privacy Policy</NuxtLink>
           <NuxtLink to="/terms" class="footer-bottom-link">Terms of Use</NuxtLink>
@@ -108,6 +108,13 @@ const toggleMenu = () => {
 
 const route = useRoute();
 const isActive = (path) => route.path === path;
+
+watch(
+  () => route.path,
+  () => {
+    menuOpen.value = false
+  }
+)
 </script>
 
 <style scoped>
